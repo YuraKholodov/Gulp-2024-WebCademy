@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Index.html</h1>
+    <title>Стартовый шаблон | ВебКадеми</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+</head>
+
+<body>
     <header class="header">
-  Header
-</header> <nav>
-  <a href="index.html">Index</a>
-  <a href="contacts.html">Contacts</a>
-  <a href="./blog/post-1.html">Post-1</a>
-  <a href="./blog/post-2.html">Post-2</a>
-</nav>
-
-    <!--Swiper  -->
-    <div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
+    <div class="container">
+        <div class="header__row">
+            <div class="logo">ВебКадеми</div>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="docs.html">Документация</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-nav-btn">
+                <div class="nav-icon"></div>
+            </button>
+        </div>
+    </div>
+</header>
+<div class="mobile-nav">
+    <ul class="mobile-nav__list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="docs.html">Документация</a></li>
+    </ul>
 </div>
- <footer class="footer">
-  Footer
+
+    <main class="docs">
+        <section>
+            <div class="container">
+                <h1 class="title-1">Gulp сборка для верстки сайтов</h1>
+                <p>Понятная Gulp сборка которая ускорит твою верстку в&#160;разы.</p>
+                <p>Документация по&#160;возможностям с&#160;примерами использования <a href="./docs.html">здесь</a>.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__copyright">
+            <p>Сборка сделана в&#160;школе <a href="https://webcademy.ru" target="_blank">webcademy.ru</a></p>
+        </div>
+    </div>
 </footer>
-    
-    <img width="200" src="./img/project-02.jpg" alt="" />
 
     <script src="./js/index.bundle.js"></script>
-  </body>
+</body>
+
 </html>

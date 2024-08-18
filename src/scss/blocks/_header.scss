@@ -1,4 +1,16 @@
 .header {
-  background-color: rgb(70, 212, 84);
-  height: 100px;
+	background-color: #c0e4f4;
+	padding: 50px 0;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.header__nav {
+	@include tablet {
+		display: none;
+	}
 }
