@@ -1,0 +1,15 @@
+.footer {
+  background-color: rgb(185, 51, 51);
+  height: 100px;
+}
+
+.header {
+  background-color: rgb(70, 212, 84);
+  height: 100px;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9fZm9vdGVyLnNjc3MiLCJibG9ja3MvX2hlYWRlci5zY3NzIiwiYmxvY2tzL19zd2lwZXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7OztBQ0ZGO0VBQ0U7RUFDQTs7O0FDRkY7RUFDRTtFQUNBIiwiZmlsZSI6Im1haW4uY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvb3RlciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDE4NSwgNTEsIDUxKTtcclxuICBoZWlnaHQ6IDEwMHB4O1xyXG59IiwiLmhlYWRlciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDcwLCAyMTIsIDg0KTtcclxuICBoZWlnaHQ6IDEwMHB4O1xyXG59XHJcbiIsIi5zd2lwZXIge1xyXG4gIHdpZHRoOiA2MDBweDtcclxuICBoZWlnaHQ6IDMwMHB4O1xyXG59XHJcbiJdfQ== */
