@@ -26,7 +26,7 @@ const plumberNotify = (title) => {
 gulp.task("html:dev", () => {
   return gulp
     .src(["./src/html/**/*.html", "!./src/html/blocks/*.html"])
-    .pipe(changed("./build/"))
+    .pipe(changed("./build/", { hasChanged: changed.compareContents }))
     .pipe(plumber(plumberNotify("HTML")))
     .pipe(
       fileInclude({
@@ -50,11 +50,13 @@ gulp.task("sass:dev", () => {
 });
 
 gulp.task("images:dev", () => {
-  return gulp
-    .src("./src/img/**/*")
-    .pipe(changed("./build/img/"))
-    // .pipe(imagemin({ verbose: true }))
-    .pipe(gulp.dest("./build/img/"));
+  return (
+    gulp
+      .src("./src/img/**/*")
+      .pipe(changed("./build/img/"))
+      // .pipe(imagemin({ verbose: true }))
+      .pipe(gulp.dest("./build/img/"))
+  );
 });
 
 gulp.task("fonts:dev", () => {
@@ -72,13 +74,15 @@ gulp.task("files:dev", () => {
 });
 
 gulp.task("js:dev", () => {
-  return gulp
-    .src("./src/js/*.js")
-    .pipe(changed("./build/js"))
-    .pipe(plumber(plumberNotify("JS")))
-    // .pipe(babel())
-    .pipe(webpack(require("./../webpack.config.js")))
-    .pipe(gulp.dest("./build/js"));
+  return (
+    gulp
+      .src("./src/js/*.js")
+      .pipe(changed("./build/js"))
+      .pipe(plumber(plumberNotify("JS")))
+      // .pipe(babel())
+      .pipe(webpack(require("./../webpack.config.js")))
+      .pipe(gulp.dest("./build/js"))
+  );
 });
 
 gulp.task("server:dev", () => {
@@ -105,5 +109,3 @@ gulp.task("watch:dev", () => {
   gulp.watch("./src/files/**/*", gulp.parallel("files:dev"));
   gulp.watch("./src/js/**/*.js", gulp.parallel("js:dev"));
 });
-
-
